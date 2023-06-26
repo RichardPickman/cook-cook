@@ -23,7 +23,7 @@ interface Props {
     size?: 'auto' | 'screen';
     onClose?: () => void;
     className?: string;
-    position?: { top: number; left: number };
+    position?: { top?: number; left?: number; right?: number; bottom?: number };
 }
 
 export const Modal = ({
@@ -55,7 +55,7 @@ export const Modal = ({
     }
 
     return createPortal(
-        <div className="fixed h-full w-full top-0 left-0 right-0 bottom-0">
+        <div className="fixed bottom-0 left-0 right-0 top-0 h-full w-full">
             <div
                 className={`fixed h-full w-full ${modalOverlay[type]}`}
                 onClick={onClose}
