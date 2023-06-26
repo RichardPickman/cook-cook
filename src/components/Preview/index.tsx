@@ -15,7 +15,7 @@ export const Preview = () => {
                     height={500}
                     alt="chef"
                 />
-                <Col className="ml-20 gap-6 text-center">
+                <Col className="gap-6 text-center">
                     <h2>Иван Иванович Ляшкин</h2>
                     <Text className="fit-content text-right">
                         Я - шеф с более чем 12-летним стажем в индустрии. Моя карьера началась с
