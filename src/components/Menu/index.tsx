@@ -1,7 +1,7 @@
 import { Col, Layout } from '@/layout';
 import { Text } from '../Text';
-import { List } from '../List';
 import Image from 'next/image';
+import { Button } from '../Button';
 
 export const Menu = () => {
     const cuisienes = ['Русская', 'Французская', 'Итальянская', 'Кавказская'];
@@ -21,15 +21,51 @@ export const Menu = () => {
             <div className="flex flex-wrap items-center justify-center gap-4">
                 {cuisienes.map((item, index) => (
                     <Col
-                        className="relative w-52 h-52 items-center justify-center rounded overflow-hidden"
+                        className="
+                            group
+                            relative
+                            h-52
+                            w-52
+                            items-center
+                            justify-center
+                            overflow-hidden
+                            rounded
+                        "
                         key={item}
                     >
-                        <Text className="relative z-10 text-lg text-white font-bold">
+                        <Text
+                            className="
+                                pointer-events-none
+                                absolute
+                                z-10
+                                translate-y-0
+                                transform
+                                font-bold
+                                text-white
+                                transition
+                                group-hover:-translate-y-7
+                            "
+                        >
                             {item} кухня
                         </Text>
+                        <Button
+                            className="
+                                absolute
+                                z-10
+                                translate-y-0
+                                transform
+                                font-bold
+                                opacity-0
+                                transition
+                                group-hover:translate-y-7
+                                group-hover:opacity-100
+                            "
+                        >
+                            Заказать
+                        </Button>
                         <Image
                             fill
-                            className="lazy w-full h-full brightness-75"
+                            className="lazy h-full w-full brightness-50"
                             src={`/img/food${index + 1}.jpg`}
                             alt={`${item} кухня`}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
