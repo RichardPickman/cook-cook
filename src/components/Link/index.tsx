@@ -9,7 +9,7 @@ interface Props {
 export const Link = ({ to, children, target = '_self' }: Props) => {
     return (
         <a
-            className="text-blue-400 underline"
+            className="hover:underline"
             href={to}
             target={target}
             rel="noreferrer"

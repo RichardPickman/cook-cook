@@ -3,16 +3,25 @@ import { ReactNode } from 'react';
 
 interface Props {
     children: ReactNode;
+    className?: string;
     direction?: 'flex-row' | 'flex-col';
+    id?: string;
 }
 
-export const Layout = ({ children, direction = 'flex-row' }: Props) => {
-    return <div className={cx('max-w-2xl mx-auto', direction)}>{children}</div>;
+export const Layout = ({ children, id, className, direction = 'flex-row' }: Props) => {
+    return (
+        <div
+            id={id}
+            className={cx('max-w-5xl px-4 mx-auto', className, direction)}
+        >
+            {children}
+        </div>
+    );
 };
 
 interface Directions {
     children: ReactNode;
-    className: string;
+    className?: string;
 }
 
 export const Col = ({ children, className }: Directions) => {

@@ -1,5 +1,9 @@
+import { Layout } from '@/layout';
+
 export const Prices = () => {
-  return (
-    <div>Prices</div>
-  )
-}
+    return (
+        <Layout>
+            <div>Prices</div>
+        </Layout>
+    );
+};
