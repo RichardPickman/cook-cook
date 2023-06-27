@@ -100,11 +100,9 @@ export const Header = () => {
                 >
                     <List className="text-md flex-col gap-6 whitespace-nowrap">
                         <Link to={'#preview'}>Обо мне</Link>
-                        <Link to={'#cooking'}>Презентация</Link>
                         <Link to={'#for-who'}>Для кого</Link>
                         <Link to={'#menu'}>Меню</Link>
                         <Link to={'#learn'}>Обучение</Link>
-                        <Link to={'#prices'}>Выездные цены</Link>
                     </List>
                     <Link to={'tel:+7 (999) 123-12-34'}>+7 (999) 123-12-34</Link>
                     <Row className="flex justify-end gap-2">
