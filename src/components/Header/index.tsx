@@ -57,7 +57,6 @@ export const Header = () => {
                     </Link>
                 </Row>
             </List>
-            <Button className="hidden lg:flex">Заказать звонок</Button>
             <Button
                 className="flex lg:hidden"
                 onClick={onClick}
