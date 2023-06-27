@@ -12,7 +12,7 @@ export const Layout = ({ children, id, className, direction = 'flex-row' }: Prop
     return (
         <div
             id={id}
-            className={cx('max-w-5xl px-4 mx-auto', className, direction)}
+            className={cx('mx-auto max-w-5xl px-4', className, direction)}
         >
             {children}
         </div>

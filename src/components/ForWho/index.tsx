@@ -8,10 +8,18 @@ export const ForWho = () => {
             id="for-who"
             direction="flex-col"
         >
-            <div className="grid grid-cols-2 items-center">
-                <Col className="gap-6 text-left">
-                    <h2>Кому подойдут услуги повара?</h2>
-                    <Text>
+            <div
+                className="
+                    grid
+                    items-center
+                    justify-center
+                    gap-10
+                    lg:grid-cols-2
+                "
+            >
+                <Col className="gap-6">
+                    <h2 className="text-center lg:text-left">Кому подойдут услуги повара?</h2>
+                    <Text className="fit-content text-center lg:text-left">
                         Услуги повара на выезд подойдут совершенно для любого праздника и любой
                         компании, будь то свадьба или маленький праздник для самых близких,
                         вечеринка в лофте или загородное торжество в кругу семьи, корпоратив
@@ -23,6 +31,7 @@ export const ForWho = () => {
                     </Text>
                 </Col>
                 <Image
+                    className="self-center justify-self-center"
                     src="/img/dish.png"
                     width={600}
                     height={600}

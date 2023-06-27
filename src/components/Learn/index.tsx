@@ -7,7 +7,7 @@ export const Learn = () => {
     return (
         <Layout
             id="learn"
-            className="flex gap-6 flex-wrap justify-center items-center"
+            className="flex flex-wrap items-center justify-center gap-6"
         >
             <Col className="items-center justify-center gap-4">
                 <h2>Хочешь научиться готовке?</h2>
@@ -15,18 +15,18 @@ export const Learn = () => {
                     Разнообразь свои кулинарные навыки: выберите идеальный курс по кулинарии!
                 </Text>
             </Col>
-            <Col className="p-6 border gap-6 rounded-md">
+            <Col className="gap-6 rounded-md border p-6">
                 <h3>Базовый</h3>
                 <div>
-                    <span className="text-gray-500 text-4xl">₽</span>
-                    <span className="text-black text-4xl">18</span>
-                    <span className="text-gray-500 text-xs">/ месяц</span>
+                    <span className="text-4xl text-gray-500">₽</span>
+                    <span className="text-4xl text-black">18</span>
+                    <span className="text-xs text-gray-500">/ месяц</span>
                 </div>
                 <List className="flex-col">
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -34,7 +34,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -42,7 +42,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -50,18 +50,18 @@ export const Learn = () => {
                 </List>
                 <Button>Купить</Button>
             </Col>
-            <Col className="p-6 border gap-6 rounded-md">
+            <Col className="gap-6 rounded-md border p-6">
                 <h3>Средний</h3>
                 <div>
-                    <span className="text-gray-500 text-4xl">₽</span>
-                    <span className="text-black text-4xl">18</span>
-                    <span className="text-gray-500 text-xs">/ месяц</span>
+                    <span className="text-4xl text-gray-500">₽</span>
+                    <span className="text-4xl text-black">18</span>
+                    <span className="text-xs text-gray-500">/ месяц</span>
                 </div>
                 <List className="flex-col">
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -69,7 +69,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -77,7 +77,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -85,18 +85,18 @@ export const Learn = () => {
                 </List>
                 <Button>Купить</Button>
             </Col>
-            <Col className="p-6 border gap-6 rounded-md">
+            <Col className="gap-6 rounded-md border p-6">
                 <h3>Шеф</h3>
                 <div>
-                    <span className="text-gray-500 text-4xl">₽</span>
-                    <span className="text-black text-4xl">18</span>
-                    <span className="text-gray-500 text-xs">/ месяц</span>
+                    <span className="text-4xl text-gray-500">₽</span>
+                    <span className="text-4xl text-black">18</span>
+                    <span className="text-xs text-gray-500">/ месяц</span>
                 </div>
                 <List className="flex-col">
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -104,7 +104,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
@@ -112,7 +112,7 @@ export const Learn = () => {
                     <Row className="gap-3">
                         <input
                             type="checkbox"
-                            className="p-1 pointer-events-none"
+                            className="pointer-events-none p-1"
                             defaultChecked
                         />
                         <Text>Lorem ipsum, dolor sit</Text>
