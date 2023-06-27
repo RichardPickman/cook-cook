@@ -30,6 +30,7 @@ export const Menu = () => {
                             justify-center
                             overflow-hidden
                             rounded
+                            drop-shadow-md
                         "
                         key={item}
                     >
@@ -65,7 +66,15 @@ export const Menu = () => {
                         </Button>
                         <Image
                             fill
-                            className="lazy h-full w-full brightness-50"
+                            className="
+                                lazy
+                                h-full
+                                w-full
+                                brightness-50
+                                transition
+                                duration-200
+                                group-hover:scale-105
+                            "
                             src={`/img/food${index + 1}.jpg`}
                             alt={`${item} кухня`}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
